@@ -1,0 +1,29 @@
+## Dev Log for Email App design ##m
+
+
+
+09/21/2023 
+ 9:00 am  - 10:00 am  →   practice bootstrap grid
+
+10:00 am - 11:00 am  →   Brainstorming and Outlining design for 3 different screen sizes.
+
+ 4:00 pm  -  5:00 pm   →   Hands on Figma
+
+ 5:00 pm  -  7:00 pm   →   Create design on Figma for mobile screen
+09/22/2023 
+ 9:00 am -  10:00 am   →  Create design for laptop and Desktop screens
+
+ 10:00 am - 10:30 am   →  Watch video on auto layout, creating components and linking overlay and displaying interactions in Figma.
+
+ 4:00 pm - 5:00 pm    →    apply learned concepts to improve my designs
+             6:00 pm - 7:00 pm    →    Further work on design improvement to make it interactive.
+09/23/2023 
+     4:00 pm - 5:00 pm  →  watch video on and practice media queries
+    
+09/25/2023 
+     10:00 am - 11:30 am →  Brainstorming and practice implementing the design to an
+                 actual webpage.
+    
+09/26/2023 
+     1:00pm - 1: 15pm  →   Create a project structure and initialized local git and remote repository.
+     
