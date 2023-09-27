@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,400&family=Roboto:ital@1&display=swap');
+
+
+ .container-main {
+    height: 100px;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+} 
+
+/* overlay and nav styles */
+
+.overlay-header {
+    background-color: lightgray;
+    height: 75px;
+    padding-left: 30px;
+    font-size: 1.5em;
+
+}
+.overlay-body, #navbar-container{
+    background-color: #2F57BE;
+    color: white;
+}
+.nav-items > li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+};
+
+.nav-item > .nav-link {
+    color: white;
+}
+.nav-link {
+    color: white;
+}
+
+.nav-item > .nav-link:hover {
+    color: black
+};
+
+ .search-icon:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+ }
