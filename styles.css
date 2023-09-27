@@ -7,7 +7,7 @@
     font-family: 'Open Sans', sans-serif;
 } 
 
-/* overlay and nav styles */
+/* overlay and navbar styles */
 
 .overlay-header {
     background-color: lightgray;
@@ -38,7 +38,47 @@
     color: black
 };
 
- .search-icon:hover {
+.search-icon:hover {
     cursor: pointer;
     transform: translateY(-2px);
  }
+/* emails list styles  */
+ 
+.email-list {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #cfe2ff;
+    box-shadow: 5px 5px 20px 6px grey;
+}
+
+.email-list:hover{
+    cursor: pointer;
+    background-color: lightgray;
+  
+ }
+/* email body styles */
+
+.icon-list {
+    background-color: lightgray;
+}
+ .icon-list > svg:hover {
+   cursor: pointer;
+   transform: translateY(2px);
+ }
+ .email-content {
+    height: 100vh;
+    border-left: 1px solid lightgray;
+}
+.btn-email-content:hover {
+    background-color: #2F57BE;
+}
+/* styles for desktop and tablet views only */
+
+/* It creates a selected email effect, the contents of which are displayed on the right side of desktop and tablet screens only */
+  
+  @media only screen and (min-width: 768px) {
+    .email-list:first-child { 
+       background-color: lightgray;
+       box-shadow: none;
+  }
+}
