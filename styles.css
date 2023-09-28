@@ -37,12 +37,15 @@
 .nav-item > .nav-link:hover {
     color: black
 };
-
+.search-icon {
+    margin-left: 10px;
+}
 .search-icon:hover {
     cursor: pointer;
     transform: translateY(-2px);
  }
-/* emails list styles  */
+
+ /* emails list styles  */
  
 .email-list {
     margin-bottom: 15px;
@@ -72,14 +75,53 @@
 .btn-email-content:hover {
     background-color: #2F57BE;
 }
+/* modal styles */
+.compose-box {
+    background-color: lightgrey;
+}
+.compose-box-header {
+    background-color:lightgray;
+}
+.compose-box-body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #2F57BE;
+    font-weight: bolder;
+    color: white;
+}
+.compose-form input{
+   width: 70%;
+   border: none;
+   border-bottom: 1px solid black;
+   margin-bottom: 20px;
+   background-color: #2F57BE;
+   color: white;
+}
+.compose-form > textarea {
+    width: 100%;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #cfe2ff;
+    color: black;
+}
+.compose-box button.btn-primary{
+    background-color: #2F57BE;
+}
 
-/* styles for desktop and tablet views only */
 
-/* It creates a selected email effect, the contents of which are displayed on the right side of desktop and tablet screens only */
+/* creates a selected email effect, the contents of which are displayed on the right side of desktop and tablet screens only*/
   
   @media only screen and (min-width: 768px) {
     .email-list:first-child { 
        background-color: lightgray;
        box-shadow: none;
   }
+
+}
+
+/* creates space on either side of search box in a mobile view when screen size <= 500px */
+@media only screen and (max-width:500px) {
+.search-container {
+    margin-left: 5px;
+    margin-right: 5px;
+}
 }

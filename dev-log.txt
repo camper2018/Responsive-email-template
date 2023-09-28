@@ -45,3 +45,10 @@
 
      8:30am  - 11:00am →  Finished working on most of the project which includes displaying the list of all the emails and the contents / body of a selected email. 
                           Also add styles to the page. 
+
+09/28/2023
+    
+    9:00am  - 11:30am →   Add compose button functionality. 
+                          It opens a modal for a user to write a new message.
+                          Also worked on improving some styles.
+                          Add comments to improve readability.
