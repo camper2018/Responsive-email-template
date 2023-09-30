@@ -57,7 +57,7 @@
 .email-list:hover{
     cursor: pointer;
     background-color: lightgray;
-  
+
  }
 /* email body styles */
 
@@ -85,16 +85,17 @@
 .compose-box-body {
     font-family: 'Open Sans', sans-serif;
     background-color: #2F57BE;
-    font-weight: bolder;
-    color: white;
+    color: lightgray;
 }
 .compose-form input{
    width: 70%;
-   border: none;
+   padding-left: 2px;
+   padding-right: 2px;
+   margin-left: 5px;
    border-bottom: 1px solid black;
    margin-bottom: 20px;
    background-color: #2F57BE;
-   color: white;
+   color: lightgray;
 }
 .compose-form > textarea {
     width: 100%;
