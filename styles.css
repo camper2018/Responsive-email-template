@@ -2,23 +2,27 @@
 
 
  .container-main {
-    height: 100px;
-    margin: 0 auto;
-    font-family: 'Open Sans', sans-serif;
+    background-color: #3e7bd120;
 } 
 
 /* overlay and navbar styles */
 
 .overlay-header {
-    background-color: lightgray;
+  
     height: 75px;
     padding-left: 30px;
     font-size: 1.5em;
+    background-color: #305fd6;
 
 }
-.overlay-body, #navbar-container{
-    background-color: #2F57BE;
+.overlay-body {
+    background-color: #3e7bd120;
+    background-color: lightgray;
+}
+#navbar-container{
+    background-color: #305fd6;
     color: white;
+   
 }
 .nav-items > li {
     list-style: none;
@@ -27,23 +31,32 @@
     justify-content:flex-start;
 };
 
-.nav-item > .nav-link {
-    color: white;
-}
 .nav-link {
     color: white;
 }
 
-.nav-item > .nav-link:hover {
-    color: black
-};
-.search-icon {
-    margin-left: 10px;
+.nav-item:hover {
+    background-color: grey;
+    color: white;
 }
+
 .search-icon:hover {
     cursor: pointer;
     transform: translateY(-2px);
  }
+    
+.nav-xl-list-item a {
+    text-decoration: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.nav-xl-list-item:first-child {
+    background-color: silver;
+}
+.nav-xl-list-item:hover {
+    background-color: lightgray;
+}
 
  /* emails list styles  */
  
@@ -56,13 +69,14 @@
 
 .email-list:hover{
     cursor: pointer;
-    background-color: lightgray;
+    background-color: silver;
 
  }
+ 
 /* email body styles */
 
 .icon-list {
-    background-color: lightgray;
+    background-color: silver;
 }
  .icon-list > svg:hover {
    cursor: pointer;
@@ -70,22 +84,24 @@
  }
  .email-content {
     height: 100vh;
-    border-left: 1px solid lightgray;
+    border-left: 1px solid silver;
 }
 .btn-email-content:hover {
-    background-color: #2F57BE;
+    background-color: #305fd6;
 }
+
 /* modal styles */
+
 .compose-box {
-    background-color: lightgrey;
+    background-color: silver;
 }
 .compose-box-header {
-    background-color:lightgray;
+    background-color:silver;
 }
 .compose-box-body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #2F57BE;
-    color: lightgray;
+    background-color: #305fd6;
+    color: silver;
 }
 .compose-form input{
    width: 70%;
@@ -94,8 +110,8 @@
    margin-left: 5px;
    border-bottom: 1px solid black;
    margin-bottom: 20px;
-   background-color: #2F57BE;
-   color: lightgray;
+   background-color: #305fd6;
+   color: silver;
 }
 .compose-form > textarea {
     width: 100%;
@@ -105,24 +121,28 @@
     color: black;
 }
 .compose-box button.btn-primary{
-    background-color: #2F57BE;
+    background-color: #305fd6;
+}
+ .compose-box button.btn-primary:hover { 
+    background-color: #1c3c8f;
 }
 
+.search-container {
+    border-radius: 30px;
+    margin: 5px 0 5px 0;
+    width: 40vw;
+}
+.search-container input {
+    margin: 10px 0 10px 0; 
 
+}
 /* creates a selected email effect, the contents of which are displayed on the right side of desktop and tablet screens only*/
   
   @media only screen and (min-width: 768px) {
     .email-list:first-child { 
-       background-color: lightgray;
+       background-color: silver;
        box-shadow: none;
   }
 
 }
 
-/* creates space on either side of search box in a mobile view when screen size <= 500px */
-@media only screen and (max-width:500px) {
-.search-container {
-    margin-left: 5px;
-    margin-right: 5px;
-}
-}

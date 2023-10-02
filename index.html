@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +8,14 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="stylesheet" href="styles.css">
     </head>
-
     <body>
-        <div class="container-fluid">
+        <div class="container-fluid container-main">
             <!-- navbar -->
-            <header class="row h-25 border">
-                <nav class="navbar px-lg-3 flex-nowrap  p-2" id="navbar-container">
-                    <div class="col1 d-flex">
-                        <div class="d-lg-none">
-                            <svg class="bg-transparent me-2" type="button" data-bs-toggle="offcanvas"
+            <header class="border">
+                <nav class="navbar px-lg-4 flex-nowrap  p-2" id="navbar-container">
+                    <div class="d-flex">
+                        <div class="d-xl-none">
+                            <svg class="bg-transparent me-1" type="button" data-bs-toggle="offcanvas"
                                 data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"
                                 xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="black" class="bi bi-list"
                                 viewBox="0 0 16 16">
@@ -97,40 +95,34 @@
                                     d="M128 0C110.3 0 96 14.3 96 32V224h96V192c0-35.3 28.7-64 64-64H480V32c0-17.7-14.3-32-32-32H128zM256 160c-17.7 0-32 14.3-32 32v32h96c35.3 0 64 28.7 64 64V416H576c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32H256zm240 64h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H496c-8.8 0-16-7.2-16-16V240c0-8.8 7.2-16 16-16zM64 256c-17.7 0-32 14.3-32 32v13L187.1 415.9c1.4 1 3.1 1.6 4.9 1.6s3.5-.6 4.9-1.6L352 301V288c0-17.7-14.3-32-32-32H64zm288 84.8L216 441.6c-6.9 5.1-15.3 7.9-24 7.9s-17-2.8-24-7.9L32 340.8V480c0 17.7 14.3 32 32 32H320c17.7 0 32-14.3 32-32V340.8z" />
                             </svg>
                         </div>
-                    </div>
-                    <div class="col2 d-none d-lg-block">
-                        <ul class="nav">
-                            <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Inbox</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Tagged</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Important</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Sent</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Drafts</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Trash</a></li>
-                        </ul>
-
-                    </div>
-                    <div class="col3 d-flex">
-                        <div class="d-flex border bg-light border rounded-1 search-container">
-                            <input class="form-control border-0 fs-6 text-light-emphasis" type="search"
-                                placeholder="Search mail" aria-label="Search">
-                            <svg class="mt-3 me-2 fw-bold search-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28"
-                                fill="black" class="bi bi-search" viewBox="0 0 16 16">
-                                <path
-                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                            </svg>
-                            </input>
-                        </div>
-                        <div class="">
-                            <img class="rounded-circle" src="./sergey-semin-Y0WXj3xqJz0-unsplash.jpg" alt="profile pic"
-                                width="60vw">
+                        <div class="d-none d-xl-block text-dark ms-2">
+                            <h3>Welcome Tania</h3>
                         </div>
                     </div>
+                <div class="d-flex justify-self-end">
+                    <div class="d-flex bg-light search-container me-2">
+                        <input class="form-control ms-4 text-light-emphasis bg-light border-0" type="search"
+                            placeholder="Search mail" aria-label="Search"/>
+                        <svg class="mx-2 align-self-center fw-bold search-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            fill="black" class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                    
+                    </div>
+                    
+                    <div>
+                        <img class="rounded-circle" src="./sergey-semin-Y0WXj3xqJz0-unsplash.jpg" alt="profile pic"
+                            width="60vw">
+                    </div>
+                </div>
                 </nav>
             </header>
-            
+
 
             <!-- Modal for composing email. The opening button lies within the email body as an svg icon-->
-            <dialog class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <dialog class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content compose-box">
                         <div class="modal-header compose-box-header">
@@ -162,11 +154,73 @@
 
             <!-- main Page -->
             <main class="row mt-5">
+                <!-- Folders cols showing only at desktop -->
+
+                <div class="col-xl-2 d-none d-xl-block">
+                    <div class="card nav-xl-card">
+                        <ul class="h-100 list-group list-group-flush">
+                            <li class="list-group-item nav-xl-list-item">
+                                <div class="w-100 d-flex justify-content-between px-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512">
+                                        <path
+                                            d="M121 32C91.6 32 66 52 58.9 80.5L1.9 308.4C.6 313.5 0 318.7 0 323.9V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V323.9c0-5.2-.6-10.4-1.9-15.5l-57-227.9C446 52 420.4 32 391 32H121zm0 64H391l48 192H387.8c-12.1 0-23.2 6.8-28.6 17.7l-14.3 28.6c-5.4 10.8-16.5 17.7-28.6 17.7H195.8c-12.1 0-23.2-6.8-28.6-17.7l-14.3-28.6c-5.4-10.8-16.5-17.7-28.6-17.7H73L121 96z" />
+                                    </svg>
+                                    <a  class="align-self-end fw-bold fs-5 " href="#">Inbox</a>
+                                </div>
+                            </li>
+                            <li class="list-group-item nav-xl-list-item">
+                                <div class="w-100 d-flex justify-content-between px-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512">
+                                        <path
+                                            d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+                                    </svg>
+                                    <a  class="align-self-end fw-bold fs-5"href="#">Tagged</a>
+                                </div>
+                            </li>
+                            <li class="list-group-item nav-xl-list-item">
+                                <div class="w-100 d-flex justify-content-between px-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 576 512">
+                                        <path
+                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                    </svg>
+                                    <a  class="align-self-end fw-bold fs-5" href="#">Important</a>
+                                </div>
+                            </li>
+                            <li class="list-group-item nav-xl-list-item">
+                                <div class="w-100 d-flex justify-content-between px-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 640 512">
+                                        <path
+                                            d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0l57.4-43c23.9-59.8 79.7-103.3 146.3-109.8l13.9-10.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176V384c0 35.3 28.7 64 64 64H360.2C335.1 417.6 320 378.5 320 336c0-5.6 .3-11.1 .8-16.6l-26.4 19.8zM640 336a144 144 0 1 0 -288 0 144 144 0 1 0 288 0zm-76.7-43.3c6.2 6.2 6.2 16.4 0 22.6l-72 72c-6.2 6.2-16.4 6.2-22.6 0l-40-40c-6.2-6.2-6.2-16.4 0-22.6s16.4-6.2 22.6 0L480 353.4l60.7-60.7c6.2-6.2 16.4-6.2 22.6 0z" />
+                                    </svg>
+                                    <a  class="align-self-end fw-bold fs-5" href="#">Send Mail</a>
+                                </div>
+                            </li>
+                            <li class="list-group-item nav-xl-list-item">
+                                <div class="w-100 d-flex justify-content-between px-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512">
+                                        <path
+                                            d="M471.6 21.7c-21.9-21.9-57.3-21.9-79.2 0L362.3 51.7l97.9 97.9 30.1-30.1c21.9-21.9 21.9-57.3 0-79.2L471.6 21.7zm-299.2 220c-6.1 6.1-10.8 13.6-13.5 21.9l-29.6 88.8c-2.9 8.6-.6 18.1 5.8 24.6s15.9 8.7 24.6 5.8l88.8-29.6c8.2-2.7 15.7-7.4 21.9-13.5L437.7 172.3 339.7 74.3 172.4 241.7zM96 64C43 64 0 107 0 160V416c0 53 43 96 96 96H352c53 0 96-43 96-96V320c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H96z" />
+                                    </svg>
+                                    <a class="align-self-end fw-bold fs-5"  href="#">Drafts</a>
+                                </div>
+                            </li>
+                            <li class="list-group-item nav-xl-list-item">
+                                <div class="w-100 d-flex justify-content-between px-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512">
+                                        <path
+                                            d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z" />
+                                    </svg>
+                                    <a class="align-self-end fw-bold fs-5" href="#">Trash</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
                 <!-- Column that holds a list of emails  -->
                 <!-- It occupies entire screen in mobile view and one-third in tablet and desktop  -->
 
-                <div class="col col-md-4">
+                <div class="col col-xl-4 email-lists">
                     <div class="border border-light email-list">
                         <div class="d-flex flex-row justify-content-between">
                             <h5>LinkedIn</h5>
@@ -258,7 +312,9 @@
                         </div>
                         <div class="d-flex flex-row justify-content-between">
                             <p>How are you liking these resources?....</p>
+
                             <!-- collapsible component button that displays email contents in a mobile view -->
+
                             <div class="d-md-none">
                                 <a class="btn p-1" data-bs-toggle="collapse" href="#collapseExample2" role="button"
                                     aria-expanded="false" aria-controls="collapseExample2">
@@ -270,7 +326,9 @@
                                 </a>
                             </div>
                         </div>
+
                         <!-- body of the collapsible component that holds email contents -->
+
                         <div class="collapse" id="collapseExample2">
                             <div class="card">
                                 <div class="d-flex justify-content-around py-3 mb-3 bg-primary-subtle icon-list">
@@ -329,7 +387,7 @@
                                         sollicitudin aliquam ultrices sagittis.<br>Viverra mauris in aliquam sem fringilla
                                         ut
                                         morbi tincidunt. Nunc faucibus a pellentesque sit amet.</p>
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -343,7 +401,9 @@
                         </div>
                         <div class="d-flex flex-row justify-content-between">
                             <p>Money will come to you as a software engineer...</p>
+
                             <!-- collapsible component button that displays email contents in a mobile view -->
+
                             <div class="d-md-none">
                                 <a class="btn p-1" data-bs-toggle="collapse" href="#collapseExample3" role="button"
                                     aria-expanded="false" aria-controls="collapseExample3">
@@ -355,7 +415,9 @@
                                 </a>
                             </div>
                         </div>
+
                         <!-- body of the collapsible component that holds email contents -->
+
                         <div class="collapse" id="collapseExample3">
                             <div class="card">
                                 <div class="d-flex justify-content-around py-3 mb-3 bg-primary-subtle icon-list">
@@ -425,7 +487,9 @@
                         </div>
                         <div class="d-flex flex-row justify-content-between">
                             <p>New courses you might be interested in...</p>
+
                             <!-- collapsible component button that displays email contents in a mobile view -->
+
                             <div class="d-md-none">
                                 <a class="btn p-1" data-bs-toggle="collapse" href="#collapseExample4" role="button"
                                     aria-expanded="false" aria-controls="collapseExample4">
@@ -437,7 +501,9 @@
                                 </a>
                             </div>
                         </div>
+                        
                         <!-- body of the collapsible component that holds email contents -->
+
                         <div class="collapse" id="collapseExample4">
                             <div class="card">
                                 <div class="d-flex justify-content-around py-3 mb-3 bg-primary-subtle icon-list">
@@ -508,7 +574,9 @@
                         </div>
                         <div class="d-flex flex-row justify-content-between">
                             <p>I struggle with most of the LeetCode....</p>
+
                             <!-- collapsible component button that displays email contents in a mobile view -->
+
                             <div class="d-md-none">
                                 <a class="btn p-1" data-bs-toggle="collapse" href="#collapseExample5" role="button"
                                     aria-expanded="false" aria-controls="collapseExample5">
@@ -520,7 +588,9 @@
                                 </a>
                             </div>
                         </div>
+
                         <!-- body of the collapsible component that holds email contents -->
+
                         <div class="collapse" id="collapseExample5">
                             <div class="card">
                                 <div class="d-flex justify-content-around py-3 mb-3 bg-primary-subtle icon-list">
@@ -584,10 +654,11 @@
                         </div>
                     </div>
                 </div>
-            <!-- Displays contents of a selected email on desktop and tablets (medium to large screen sizes). -->
 
-                <div class="col col-md-8 d-md-inline d-none email-content">
-                    <div class="d-flex justify-content-around py-3 mb-3 email-icons-lg icon-list">
+                <!-- Displays contents of a selected email on desktop and tablets (medium to large screen sizes). -->
+
+                <div class="col col-md-8 col-xl-6 d-md-inline d-none email-content">
+                    <div class="d-flex justify-content-around py-3 mb-3 icon-list">
                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
                             class="bi bi-reply" viewBox="0 0 16 16">
                             <path
@@ -605,8 +676,8 @@
                             <path
                                 d="M9.502 5.513a.144.144 0 0 0-.202.134V6.65a.5.5 0 0 1-.5.5H2.5v2.9h6.3a.5.5 0 0 1 .5.5v1.003c0 .108.11.176.202.134l3.984-2.933a.51.51 0 0 1 .042-.028.147.147 0 0 0 0-.252.51.51 0 0 1-.042-.028L9.502 5.513zM8.3 5.647a1.144 1.144 0 0 1 1.767-.96l3.994 2.94a1.147 1.147 0 0 1 0 1.946l-3.994 2.94a1.144 1.144 0 0 1-1.767-.96v-.503H2a.5.5 0 0 1-.5-.5v-3.9a.5.5 0 0 1 .5-.5h6.3v-.503z" />
                         </svg>
-                        
-                        <svg  xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
                             class="bi bi-send" viewBox="0 0 16 16">
                             <path
                                 d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z" />
@@ -653,10 +724,8 @@
                 </div>
             </main>
         </div>
-
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
             crossorigin="anonymous"></script>
     </body>
-
 </html>
