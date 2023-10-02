@@ -1,50 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,400&family=Roboto:ital@1&display=swap');
 
 
- .container-main {
+.container-main {
     background-color: #3e7bd120;
-} 
+}
 
 /* overlay and navbar styles */
 
 .overlay-header {
-  
     height: 75px;
     padding-left: 30px;
     font-size: 1.5em;
     background-color: #305fd6;
 
 }
+
 .overlay-body {
     background-color: #3e7bd120;
     background-color: lightgray;
 }
-#navbar-container{
+
+#navbar-container {
     background-color: #305fd6;
     color: white;
-   
 }
-.nav-items > li {
+
+.nav-items>li {
     list-style: none;
     display: flex;
     align-items: center;
-    justify-content:flex-start;
-};
-
-.nav-link {
-    color: white;
+    justify-content: flex-start;
 }
+
+;
 
 .nav-item:hover {
     background-color: grey;
     color: white;
 }
 
+.nav-link {
+    color: white;
+}
+
+.search-container {
+    border-radius: 30px;
+    margin: 5px 0 5px 0;
+    width: 40vw;
+}
+
+.search-container input {
+    margin: 10px 0 10px 0;
+
+}
+
 .search-icon:hover {
     cursor: pointer;
     transform: translateY(-2px);
- }
-    
+}
+
+/* nav styles for x-large screens only */
+
 .nav-xl-list-item a {
     text-decoration: none;
     padding-top: 5px;
@@ -54,12 +70,13 @@
 .nav-xl-list-item:first-child {
     background-color: silver;
 }
+
 .nav-xl-list-item:hover {
     background-color: lightgray;
 }
 
- /* emails list styles  */
- 
+/* emails list styles  */
+
 .email-list {
     margin-bottom: 15px;
     padding: 10px;
@@ -67,25 +84,27 @@
     box-shadow: 5px 5px 20px 6px grey;
 }
 
-.email-list:hover{
+.email-list:hover {
     cursor: pointer;
     background-color: silver;
+}
 
- }
- 
 /* email body styles */
 
 .icon-list {
     background-color: silver;
 }
- .icon-list > svg:hover {
-   cursor: pointer;
-   transform: translateY(2px);
- }
- .email-content {
+
+.icon-list>svg:hover {
+    cursor: pointer;
+    transform: translateY(2px);
+}
+
+.email-content {
     height: 100vh;
     border-left: 1px solid silver;
 }
+
 .btn-email-content:hover {
     background-color: #305fd6;
 }
@@ -95,54 +114,52 @@
 .compose-box {
     background-color: silver;
 }
+
 .compose-box-header {
-    background-color:silver;
+    background-color: silver;
 }
+
 .compose-box-body {
     font-family: 'Open Sans', sans-serif;
     background-color: #305fd6;
     color: silver;
 }
-.compose-form input{
-   width: 70%;
-   padding-left: 2px;
-   padding-right: 2px;
-   margin-left: 5px;
-   border-bottom: 1px solid black;
-   margin-bottom: 20px;
-   background-color: #305fd6;
-   color: silver;
+
+.compose-form input {
+    width: 70%;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-left: 5px;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+    background-color: #305fd6;
+    color: silver;
 }
-.compose-form > textarea {
+
+.compose-form>textarea {
     width: 100%;
     border-radius: 10px;
     padding: 5px;
     background-color: #cfe2ff;
     color: black;
 }
-.compose-box button.btn-primary{
+
+.compose-box button.btn-primary {
     background-color: #305fd6;
 }
- .compose-box button.btn-primary:hover { 
+
+.compose-box button.btn-primary:hover {
     background-color: #1c3c8f;
 }
 
-.search-container {
-    border-radius: 30px;
-    margin: 5px 0 5px 0;
-    width: 40vw;
-}
-.search-container input {
-    margin: 10px 0 10px 0; 
+/* styles for a selected email effect.
+The contents of the selected email are displayed on the right side of desktop and tablet screens
+For mobile views, the contents are displayed in a collapsible component */
+
+@media only screen and (min-width: 768px) {
+    .email-list:first-child {
+        background-color: silver;
+        box-shadow: none;
+    }
 
 }
-/* creates a selected email effect, the contents of which are displayed on the right side of desktop and tablet screens only*/
-  
-  @media only screen and (min-width: 768px) {
-    .email-list:first-child { 
-       background-color: silver;
-       box-shadow: none;
-  }
-
-}
-
