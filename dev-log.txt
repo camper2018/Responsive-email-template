@@ -54,7 +54,14 @@
                           Added comments to improve readability.
 09/30/2023
  
-    7:30am  - 10:30am  → Added changes in my design for desktop layout.
-                         Removed nav links from the top navbar and displayed them in 2 columns on left side of the screen.
-                         Also added and modified some styles.
-                         
+    7:30am  - 10:30am →   Added changes in my design for desktop layout.
+                          Removed nav links from the top navbar and displayed them in 2 columns on left side of the screen.
+                          Also added and modified some styles.
+
+10/3/2023
+
+    9:00am  - 10:00am →  Convert email list into an independent scrollable component.
+                         Also made email body scrollable to display larger emails without overflowing the container.
+
+    5:00pm  - 7:00pm  →  Add another compose button to display it outside the email body.
+                         Edited header component to stretch it across the entire screen and improve responsiveness.

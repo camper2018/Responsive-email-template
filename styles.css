@@ -3,12 +3,14 @@
 
 .container-main {
     background-color: #3e7bd120;
+    height: 100vh;
+   
 }
 
-/* overlay and navbar styles */
+/* overlay and header styles */
 
 .overlay-header {
-    height: 75px;
+    height: 82px;
     padding-left: 30px;
     font-size: 1.5em;
     background-color: #305fd6;
@@ -20,10 +22,6 @@
     background-color: lightgray;
 }
 
-#navbar-container {
-    background-color: #305fd6;
-    color: white;
-}
 
 .nav-items>li {
     list-style: none;
@@ -40,12 +38,23 @@
 }
 
 .nav-link {
+    color: #305fd6;
+}
+.header {
+    background-color: #305fd6;
     color: white;
+}
+.header-left {
+    display: flex;
+    justify-content: flex-start;
+}
+.header-right {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .search-container {
     border-radius: 30px;
-    margin: 5px 0 5px 0;
     width: 40vw;
 }
 
@@ -74,9 +83,20 @@
 .nav-xl-list-item:hover {
     background-color: lightgray;
 }
-
+.btn-compose {
+   background-color: #305fd6;
+   color: white;
+}
+.btn-compose:hover {
+    background-color: #1c3c8f;
+    color: white;
+}
 /* emails list styles  */
 
+.email-lists {
+    height: 80vh;
+    overflow-y: scroll;
+}
 .email-list {
     margin-bottom: 15px;
     padding: 10px;
@@ -100,11 +120,14 @@
     transform: translateY(2px);
 }
 
-.email-content {
-    height: 100vh;
-    border-left: 1px solid silver;
+.email-text {
+    height: 48vh;
+    overflow-y: scroll;
+    padding-bottom: 20px;
 }
-
+.card-footer {
+    justify-content: flex-end;
+}
 .btn-email-content:hover {
     background-color: #305fd6;
 }
@@ -163,3 +186,17 @@ For mobile views, the contents are displayed in a collapsible component */
     }
 
 }
+@media screen and (max-width: 350px) { 
+    .header-left, .header-right {
+        width: 100%;
+    }
+     div.header-left > div {
+        margin-bottom: 15px;
+    }
+    div.header-right {
+        justify-content: flex-start;
+    }
+    .search-container  {
+        width: 55vw;
+    }
+ }
